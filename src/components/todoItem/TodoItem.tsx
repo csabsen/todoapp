@@ -31,7 +31,7 @@ const TodoItem = ({ todo }: TodoItemProps) => {
 
 	return (
 		<Styled.Container isDone={todo.isDone}>
-			<Checkbox checked={todo.isDone} />
+			<Checkbox checked={todo.isDone} id={todo.id} />
 			{editing === todo.id ? (
 				<TextInput
 					type='update'
